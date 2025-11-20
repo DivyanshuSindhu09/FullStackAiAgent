@@ -19,7 +19,11 @@ export const sendMail = async (to, text, subject) => {
         text, // plain‑text body
         html: "<b>Hello world?</b>", // HTML body
     });
+
+        console.log("Message was sent!", info.messageId)
+        return info
     } catch (error) {
-        
+        console.error("Error from nodemailer!")
+        throw error
     }
 }

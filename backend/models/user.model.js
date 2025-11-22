@@ -18,4 +18,4 @@ const userSchema = new mongoose.Schema({
     skills : [String]
 },{timestamps : true})
 
-export default mongoose.model("User", userSchema)
+export const User =  mongoose.model("User", userSchema)
